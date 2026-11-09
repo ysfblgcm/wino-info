@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wino Info</title>
+    <link rel="stylesheet" href="winocss.css">
+</head>
+<body>
+    
+    <header>
+        <h1>Wino Info</h1>
+        <img src="" alt="">
+    
+         <figure>
+             <img src="win.png" class="imgg">
+             <figcaption>Bienvenue Chez Nous</figcaption>
+        </figure>
+    <p style="color: blue;">Wino Info</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#propos"> Propos</a></li>
+            <li><a href="#produit">Produit</a></li>
+            <li><a href="#services">Servises</a></li>
+            <li><a href="#commander">Commander</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+      <h2>commander un pc</h2>
+    <form>
+        <>
+            <legend>Vos coordonnées</legend>
+            <p>
+            <label for="nom">Nom :</label>
+            <input type="text" id="nom" name="nom" minlength="2" required>
+            </p>
+            <p>
+            <label for="prenom">Prénom :</label>
+            <input type="text" id="prenom" name="prenom" minlength="2" required>
+            </p>
+            <p>
+            <label for="email">Adresse électronique :</label>
+            <input type="email" id="email" name="email" placeholder="vous@exemple.tn" required>
+            </p>
+            <p>
+            <label for="telephone">Téléphone :</label>
+            <input type="tel" id="telephone" name="telephone" pattern="\+216[0-9]{8}" title="+216 suivi de 8 chiffres (ex: +21629512816)" placeholder="+21629512816" required>
+            </p>
+            <p>
+            <label for="cod">Code postal :</label>
+            <input type="number" id="cod" name="cod" pattern="[0-9]{4}" maxlength="4" required>
+            </p>
+            <p>
+            <label for="adr">Adresse de livraison :</label>
+            <textarea id="adr" name="adr" rows="3" cols="40" required></textarea>
+            </p>
+            <p>
+            <label for="gouvernorat">Gouvernorat :</label>
+            <select id="gouvernorat" name="gouvernorat">
+            <option value="sfax" selected>Sfax</option>
+            <option value="Tunis">Tunis</option>
+            <option value="Sousse">Sousse</option>
+            <option value="Gabès">Gabès</option>
+            <option value="Autre">Autre</option>
+            </select>
+            </p>
+            <legend>Confirmation</legend>
+        </fieldset>
+        <p>
+          <button type="submit">Envoyer ma commande</button>
+          <button type="reset">Tout effacer</button>
+        </p>
+    </form>
+    </main>
+</body>
+<footer>
+        <div>
+            <h3>Coorfonnees</h3>
+            <p>wino info tunis</p>
+            <p>Rue Hbib Bourguiba Tunis</p>
+            <p>Tel: +216 76 000 000</p>
+        </div>
+        <div>
+            <h3>Suivez-nous</h3>
+            <p><a href="https://www.facebook.com/winoinfo">Facebook</a></p>
+            <p><a href="https://www.instagrame.com/winoinfo">Instagram</a></p>
+        </div>
+  </footer>
+</html>
